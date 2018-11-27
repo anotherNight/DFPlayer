@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
     s.name         = 'DFPlayer'
-    s.version      = '1.0.5'
+    s.version      = '1.0.6'
     s.summary      = 'A simple and flexible iOS audio playback module.'
     s.homepage     = 'https://github.com/ihoudf/DFPlayer'
     s.license      = 'MIT'
@@ -13,8 +13,8 @@ Pod::Spec.new do |s|
     s.resource     = 'DFPlayer/DFPlayer.bundle'
     s.requires_arc = true
     s.frameworks = 'UIKit','AVFoundation','MediaPlayer'
+    s.dependency 'AFNetworking' , '~>3.2'
     # s.subspec 'supplement' do |ss|
     #     ss.source_files = 'DFPlayer/supplement/*.{h,m}'
     # end
 end
-
